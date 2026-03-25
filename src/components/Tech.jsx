@@ -18,9 +18,9 @@ const Tech = () => {
   }, []);
 
   return (
-    <div className='flex flex-row flex-wrap justify-center gap-10'>
+    <div className='flex flex-row flex-wrap justify-center gap-4 sm:gap-10'>
       {technologies.map((technology) => (
-        <div className='w-28 h-28' key={technology.name}>
+        <div className='w-16 h-16 sm:w-28 sm:h-28' key={technology.name}>
           {isMobile ? (
             <img src={technology.icon} alt={technology.name} className="w-full h-full" />
           ) : (

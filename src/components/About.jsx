@@ -1,7 +1,7 @@
 import React from "react";
-// import Tilt from "react-tilt";
 import { Tilt } from 'react-tilt';
 import { motion } from "framer-motion";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 //----------------------------------------------------
 import { styles } from "../styles";
 import { services } from "../constants";
@@ -48,14 +48,54 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled software developer with extensive experience in Flutter, Dart, and 
-        mobile app development. Specializing in creating high-performance, visually 
-        appealing, and user-friendly cross-platform applications. Collaboration with 
-        clients is key to developing scalable solutions that address real-world challenges. 
+        I'm a skilled software developer with extensive experience in Flutter, Dart, and
+        mobile app development. Specializing in creating high-performance, visually
+        appealing, and user-friendly cross-platform applications. Collaboration with
+        clients is key to developing scalable solutions that address real-world challenges.
         Let's work together to turn your ideas into exceptional mobile experiences!
       </motion.p>
+      <div className='mt-6 flex items-center gap-4'>
+        <a
+          href='#contact'
+          className='bg-[#915EFF] hover:bg-[#7a4fd6] transition-colors text-white font-bold py-3 px-8 rounded-xl shadow-lg shadow-[#915EFF]/30'
+        >
+          Hire Me
+        </a>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
+        <div className='flex gap-4'>
+          <a
+            href='https://github.com/AdeebAbubacker'
+            target='_blank'
+            rel='noreferrer'
+            className='text-secondary hover:text-white transition-colors'
+          >
+            <FaGithub size={28} />
+          </a>
+          <a
+            href='https://www.linkedin.com/in/adeeb-abubacker/'
+            target='_blank'
+            rel='noreferrer'
+            className='text-secondary hover:text-white transition-colors'
+          >
+            <FaLinkedin size={28} />
+          </a>
+        </div>
+      </div>
+      <div className='mt-10 grid grid-cols-2 xs:grid-cols-4 gap-6'>
+        {[
+          { count: "4+", label: "Years Experience" },
+          { count: "10+", label: "Apps Delivered" },
+          { count: "10+", label: "Happy Clients" },
+          { count: "2+", label: "Companies" },
+        ].map(({ count, label }) => (
+          <div key={label} className='flex flex-col items-center bg-tertiary rounded-2xl py-6 px-4 shadow-card'>
+            <span className='text-[#915EFF] text-[32px] font-bold'>{count}</span>
+            <span className='text-secondary text-[14px] text-center mt-1'>{label}</span>
+          </div>
+        ))}
+      </div>
+
+      <div className='mt-6 flex flex-wrap gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

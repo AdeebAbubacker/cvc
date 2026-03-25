@@ -3,7 +3,7 @@ import { Tilt } from 'react-tilt';
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { github } from "../assets";
+import { FaGooglePlay } from "react-icons/fa";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -24,9 +24,9 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-[280px] flex-shrink-0'
       >
-        <div className='relative w-full h-[230px]'>
+        <div className='relative w-full h-[160px] sm:h-[230px]'>
           <img
             src={image}
             alt='project_image'
@@ -38,11 +38,7 @@ const ProjectCard = ({
               onClick={() => window.open(source_code_link, "_blank")}
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
             >
-              <img
-                src={github}
-                alt='source code'
-                className='w-1/2 h-1/2 object-contain'
-              />
+              <FaGooglePlay className='w-1/2 h-1/2 text-white' size={20} />
             </div>
           </div>
         </div>
@@ -88,9 +84,12 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className='mt-20 flex flex-wrap gap-7'>
+      {/* mobile: horizontal scroll, desktop: wrap grid */}
+      <div className='mt-8 sm:mt-20 flex sm:flex-wrap gap-4 sm:gap-7 overflow-x-auto sm:overflow-visible pb-4 sm:pb-0 snap-x snap-mandatory sm:snap-none'>
         {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
+          <div key={`project-${index}`} className='snap-start'>
+            <ProjectCard index={index} {...project} />
+          </div>
         ))}
       </div>
     </>

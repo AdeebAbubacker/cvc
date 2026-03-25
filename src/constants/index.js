@@ -17,6 +17,10 @@ import {
   tesla,
   shopify,
   carrent,
+  nasserPharmacy,
+  cruiselogo,
+  slbsLogo,
+  mapclub,
   jobit,
   tripguide,
   threejs,
@@ -25,6 +29,7 @@ import {
   php,
   contentCreator,
   ui_ux,
+  groOnePoster,
 } from "../assets";
 
 export const navLinks = [
@@ -163,7 +168,7 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Loyalty App",
+    name: "Yes Yes Loyalty",
     description:
       "The Yes Yes Indian Supermarket Loyalty Program app enables customers to easily register and efficiently manage their accounts. Users receive a unique QR code for seamless scanning at checkout, which automatically applies their loyalty rewards. The app provides real-time tracking of loyalty points , significantly enhancing the shopping experience.",
     tags: [
@@ -181,12 +186,12 @@ const projects = [
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/AdeebAbubacker/yes_loyality",
+    source_code_link: "https://play.google.com/store/search?q=yes%20yes%20loyalty",
   },
   {
-    name: "Vegan",
+    name: "Cruise Buddy",
     description:
-      "A mobile application that allows users to browse and purchase fresh fruits and vegetables, view detailed nutritional information, and receive personalized recommendations based on their preferences. The app also provides convenient delivery options and locates nearby vendors offering organic and locally-sourced produce",
+      "Cruise Buddy is designed to enhance your house boat experience by providing seamless planning, real-time updates, and social connectivity. Whether you're a first-time cruiser or a seasoned traveler, the app helps you find house boats itineraries, explore onboard activities, and connect with fellow passengers. Stay updated with ship schedules, track excursions, and access essential travel tips—all in one place. With Cruise Buddy, your cruise vacation becomes smoother, more organized, and more enjoyable!",
     tags: [
       {
         name: "Flutter",
@@ -201,13 +206,13 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/AdeebAbubacker/fruit_shop_app",
+    image: cruiselogo,
+    source_code_link: "https://play.google.com/store/search?q=cruise%20buddy&c=apps&hl=en_IN",
   },
   {
-    name: "Real Estate",
+    name: "Nasser Pharmacy",
     description:
-      "A dynamic real estate mobile app that empowers users to browse and discover properties, connect with agents, and explore detailed listings. The app offers a seamless user experience with advanced search filters, virtual property tours, and personalized recommendations, making it easier for users to find their ideal home or investment property",
+      "A dynamic health and beauty mobile app that allows users to browse and purchase pharmacy products, explore detailed listings, and connect with pharmacists. The app offers a seamless user experience with advanced search filters, fast delivery options, and personalized support, making it easier for users to manage their health and wellness needs.",
     tags: [
       {
         name: "Flutter",
@@ -222,8 +227,71 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/AdeebAbubacker/ninety_two_agents",
+    image: nasserPharmacy,
+    source_code_link: "https://play.google.com/store/search?q=nasser+pharmacys",
+  },
+  {
+    name: "Gro One",
+    description:
+      "An AI-driven freight & fleet management platform for Hinduja Group that enables transporters and fleet owners to manage logistics through a unified platform. Features AI-powered load discovery, GPS-based tracking, intelligent route optimization, fuel management, and real-time fleet monitoring for enhanced operational efficiency.",
+    tags: [
+      {
+        name: "Flutter",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Dart",
+        color: "green-text-gradient",
+      },
+      {
+        name: "AI",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: groOnePoster,
+    source_code_link: "https://play.google.com/store/search?q=gro%20one",
+  },
+  {
+    name: "Map Club",
+    description:
+      "A feature-rich mobile application delivering a seamless online shopping experience integrated with a unified loyalty program across multiple brands. Includes Pay & Pick feature, universal search, loyalty points earning and redemption, store locator, e-gift vouchers, and multi-channel deals integration.",
+    tags: [
+      {
+        name: "Flutter",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Dart",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Firebase",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: mapclub,
+    source_code_link: "https://play.google.com/store/search?q=mapclub",
+  },
+  {
+    name: "SLBS LMS",
+    description:
+      "A scalable Learning Management System mobile application enabling seamless online education for students, professionals, and educators. Features live session integration for real-time classes, progress tracking, performance monitoring, structured course management, and optimized performance across Android and iOS.",
+    tags: [
+      {
+        name: "Flutter",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Dart",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Firebase",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: slbsLogo,
+    source_code_link: "https://play.google.com/store/search?q=slbs%20lms",
   },
 ];
 

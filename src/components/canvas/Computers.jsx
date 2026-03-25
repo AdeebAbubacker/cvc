@@ -145,7 +145,7 @@ const ComputersCanvas = () => {
   return (
     <>
       {isMobile ? (
-       <img src={backendImage} alt="Static backend image" style={{ width: '100%', height: 'auto', paddingTop: '300px' }} />
+        <img src={backendImage} alt="Static backend image" style={{ width: '100%', height: 'auto', paddingTop: '300px' }} />
 
       ) : (
         <Canvas

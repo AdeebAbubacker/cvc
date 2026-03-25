@@ -30,6 +30,11 @@ import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 import ui_ux from "./ui_ux.png";
 import carrent from "./carrent.png";
+import cruiselogo from "./cruiselogo.png";
+import nasserPharmacy from "./nasserpharmacy.png";
+import mapclub from "./mapclub.png";
+import groOnePoster from "./groOnePoster.png";
+import slbsLogo from "./slbsLogo.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
@@ -64,6 +69,11 @@ export {
   starbucks,
   tesla,
   carrent,
+  cruiselogo,
+  nasserPharmacy,
+  groOnePoster, 
+  mapclub,
+  slbsLogo,
   jobit,
   tripguide,
   dart,

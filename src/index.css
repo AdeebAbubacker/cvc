@@ -13,6 +13,21 @@
   color-scheme: dark;
 }
 
+@media (max-width: 768px) {
+  canvas {
+    touch-action: pan-y !important;
+  }
+}
+
+/* hide scrollbar on project carousel but keep scroll functional */
+.overflow-x-auto::-webkit-scrollbar {
+  display: none;
+}
+.overflow-x-auto {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;
