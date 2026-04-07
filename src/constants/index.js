@@ -29,6 +29,7 @@ import {
   php,
   contentCreator,
   ui_ux,
+  doodleblue,
   groOnePoster,
 } from "../assets";
 
@@ -106,10 +107,24 @@ const technologies = [
 const experiences = [
   {
     title: "Flutter Developer",
+    company_name: "Doodleblue Innovations Pvt Ltd",
+    icon: doodleblue,
+    iconBg: "#FFFFFF",
+    date: "Jun 2025 - Present",
+    points: [
+      "Built a variety of mobile applications focused on enhancing user engagement and delivering intuitive interfaces.",
+      "Collaborated with designers and content teams to implement multimedia-rich features like videos, quizzes, and interactive modules.",
+      "Developed custom features to track user behavior, improve navigation flow, and enhance app responsiveness.",
+      "Prioritized accessibility and consistency across different devices and screen sizes.",
+      "Integrated features such as notifications, offline support, and dynamic content loading to enrich user experience.",
+    ],
+  },
+  {
+    title: "Mobile App Developer",
     company_name: "SLBS MARKLANCE",
     icon: tesla,
     iconBg: "#FFFFFF",
-    date: "Oct 2024 - Present",
+    date: "Aug 2022 - May 2025",
     points: [
       "Developed mobile applications with a strong focus on LMS (Learning Management System) and CRM solutions using Flutter.",
       "Designed scalable and maintainable architectures tailored for educational and customer management use cases.",
@@ -119,20 +134,7 @@ const experiences = [
       "Handled deployment of applications to App Store and Google Play Console.",
       "Improved app performance and usability through clean architecture and optimized UI/UX strategies.",
     ],
-  },
-  {
-    title: "Mobile App Developer",
-    company_name: "Cyber Fort Technologies",
-    icon: starbucks,
-    iconBg: "#FFFFFF",
-    date: "Aug 2022 - Sep 2024",
-    points: [
-      "Built a variety of mobile applications focused on enhancing user engagement and delivering intuitive interfaces.",
-      "Collaborated with designers and content teams to implement multimedia-rich features like videos, quizzes, and interactive modules.",
-      "Developed custom features to track user behavior, improve navigation flow, and enhance app responsiveness.",
-      "Prioritized accessibility and consistency across different devices and screen sizes.",
-      "Integrated features such as notifications, offline support, and dynamic content loading to enrich user experience.",
-    ],
+
   },
 ];
 

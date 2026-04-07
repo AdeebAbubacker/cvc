@@ -27,6 +27,7 @@ import php from "./tech/php.png";
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
+import doodleblue from "./company/doodle.png";
 import tesla from "./company/tesla.png";
 import ui_ux from "./ui_ux.png";
 import carrent from "./carrent.png";
@@ -52,6 +53,7 @@ export {
   css,
   docker,
   firebase,
+  doodleblue,
   git,
   html,
   flutter,
